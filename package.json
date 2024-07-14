@@ -4,10 +4,13 @@
   "description": "Eyeballed a model for a V4+ climb and testing out applications using ThreeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "./deploy.sh"
   },
   "keywords": [],
-  "author": "",
+  "author": "ヤリ",
   "license": "ISC",
   "dependencies": {
     "three": "^0.166.1"
