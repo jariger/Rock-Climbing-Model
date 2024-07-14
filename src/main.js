@@ -21,7 +21,7 @@ controls.enableDamping = true;
 
 // Load the GLTF model
 const loader = new GLTFLoader();
-loader.load('edgemethod.glb', function (gltf) {
+loader.load('/edgemethod.glb', function (gltf) {
     scene.add(gltf.scene);
 }, undefined, function (error) {
     console.error(error);
