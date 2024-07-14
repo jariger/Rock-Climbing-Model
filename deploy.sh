@@ -3,26 +3,25 @@
 # abort on errors
 set -e
 
-# build
+# Navigate to your project root directory
+cd ~/Desktop/Rock-Climbing-Model
+
+# Remove any existing Git repository in dist
+rm -rf dist/.git
+
+# Build the project
 npm run build
 
-# navigate into the build output directory
+# Navigate to dist directory
 cd dist
 
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
-
+# Initialize a new Git repository and switch to gh-pages branch
 git init
 git add -A
 git commit -m 'deploy'
-
-# Create or switch to gh-pages branch
 git branch -M gh-pages
 
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git gh-pages
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# Force push to the gh-pages branch
 git push -f git@github.com:jariger/Rock-Climbing-Model.git gh-pages
 
 cd -
