@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# abort on errors
-set -e
-
 # Navigate to your project root directory
 cd ~/Desktop/Rock-Climbing-Model
 
