@@ -1,0 +1,18 @@
+{
+  "name": "rock-climbing-model",
+  "version": "1.0.0",
+  "description": "Eyeballed a model for a V4+ climb and testing out applications using ThreeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.166.1"
+  },
+  "devDependencies": {
+    "vite": "^5.3.3"
+  }
+}
